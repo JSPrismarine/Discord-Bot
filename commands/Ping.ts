@@ -9,6 +9,6 @@ export default class Ping extends Command {
 		let before = Date.now();
 		const m: Message = await msg.reply("Pinging...");
 		let now = Date.now();
-		await m.edit(`Pong \`${now - before}\` ms!`);
+		m.edit(`Pong \`${now - before}\` ms!`);
 	}
 }
