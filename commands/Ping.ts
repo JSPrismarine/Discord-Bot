@@ -8,7 +8,6 @@ export default class Ping extends Command {
 	public async onRun(bot: Client, msg: Message): Promise<void> {
 		let before = Date.now();
 		const m: Message = await msg.reply("Pinging...");
-		let now = Date.now();
-		m.edit(`Pong \`${now - before}\` ms!`);
+		m.edit(`Pong \`${Date.now() - before}\` ms!`);
 	}
 }
