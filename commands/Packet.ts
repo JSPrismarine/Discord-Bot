@@ -36,7 +36,7 @@ export default class Packet extends Command {
 		return new Embed()
 			.setColor('#0acc5b')
 			.setAuthor('Version: ' + Identifiers.MinecraftVersion)
-			.addField('Packet Name', name, false)
-			.addField('Packet ID', `0x${id.toString(16)}`, false);
+			.addField('Packet Name', name, true)
+			.addField('Packet ID', `0x${id.toString(16)}`, true);
 	}
 }
