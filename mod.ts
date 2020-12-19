@@ -1,12 +1,14 @@
 import Ping from "./commands/Ping.ts";
 import { Client, CommandHandler, Module } from './lib/assistant/mod.ts';
 import { config } from "https://deno.land/x/dotenv/mod.ts";
+import Packet from "./commands/Packet.ts";
 
 const bot: Client = new Client();
 const handler = new CommandHandler(bot, { prefix: "!" });
 
 handler.registerModule(new Module('default', [
-	new Ping
+	new Ping,
+	new Packet
 ]));
 handler.start();
 
