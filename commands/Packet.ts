@@ -33,10 +33,11 @@ export default class Packet extends Command {
 	}
 
 	private buildEmbed(icon: string, name: string, id: number): Embed {
+		let packet: string = id.toString(16).length === 1 ? "0" + id.toString(16) : id.toString(16);
 		return new Embed()
 			.setColor('#0acc5b')
 			.setAuthor('Version: ' + Identifiers.MinecraftVersion)
 			.addField('Packet Name', name, true)
-			.addField('Packet ID', `0x${id.toString(16)}`, true);
+			.addField('Packet ID', `0x${packet}`, true);
 	}
 }
