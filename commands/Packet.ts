@@ -27,7 +27,7 @@ export default class Packet extends Command {
 				const val = (Identifiers as any)[found as string];
 				msg.channel.send(this.buildEmbed(msg.guild?.icon ?? "", found, val));
 			} else {
-				msg.channel.send(`Could not find any packet with the name of: \`${type.split('`').join('\\`')}\``);
+				msg.channel.send(`Could not find any packet with the name of: \`${type.split('`').join('')}\``);
 			}
 		}
 	}
@@ -38,6 +38,7 @@ export default class Packet extends Command {
 			.setColor('#0acc5b')
 			.setAuthor('Version: ' + Identifiers.MinecraftVersion)
 			.addField('Packet Name', name, true)
-			.addField('Packet ID', `0x${packet}`, true);
+			.addField('Packet ID', `0x${packet}`, true)
+			.addField('Packet Int', id.toString(), true);
 	}
 }
