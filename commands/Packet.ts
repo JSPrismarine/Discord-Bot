@@ -1,5 +1,5 @@
 import { Client, Command, Embed, Message } from "../lib/assistant/mod.ts";
-import Identifiers from "https://raw.githubusercontent.com/JSPrismarine/JSPrismarine/040d3efcd1140604264cedc1f2a4d51acace5b37/src/network/Identifiers.ts";
+import Identifiers from "https://raw.githubusercontent.com/JSPrismarine/JSPrismarine/master/src/network/Identifiers.ts";
 
 export default class Packet extends Command {
 	public constructor() {
