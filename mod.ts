@@ -1,5 +1,5 @@
 import Ping from "./commands/Ping.ts";
-import { Client, CommandHandler, Module } from './lib/assistant/mod.ts';
+import { Client, CommandHandler, Module } from 'https://raw.githubusercontent.com/Assistant-Bot/Lib/24b6d0ab57be18739adc1cfc593886ebe466a4e9/mod.ts';
 import { config } from "https://deno.land/x/dotenv/mod.ts";
 import Packet from "./commands/Packet.ts";
 import BotInfo from "./commands/BotInfo.ts";

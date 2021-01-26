@@ -1,4 +1,4 @@
-import { Client, Command, Message } from "../lib/assistant/mod.ts";
+import { Client, Command, Message } from "https://raw.githubusercontent.com/Assistant-Bot/Lib/24b6d0ab57be18739adc1cfc593886ebe466a4e9/mod.ts";
 
 export default class Ping extends Command {
 	public constructor() {
